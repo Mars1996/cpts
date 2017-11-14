@@ -13,12 +13,14 @@
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
+<script defer src="js/jquery.flexslider.js"></script>
+<script src="js/index.js"></script>
 <!-- //js -->
 <link href='https://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:600,600italic,700,400' rel='stylesheet' type='text/css'>
 <!-- FlexSlider -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<script defer src="js/jquery.flexslider.js"></script>
+
 <script type="text/javascript">
 						$(window).load(function(){
 						  $('.flexslider').flexslider({
@@ -32,7 +34,7 @@
 
 </head>
 	
-<body>
+<body onLoad="pages()">
 <!-- banner -->
 	<div class="banner">
 		<div class="container">
@@ -84,8 +86,8 @@
 										<div class="sign-in-form">
 											<div class="in-form">
 												<form>
-													<input type="text" placeholder="Username" required>
-													<input type="password" placeholder="Password" required>
+													<input type="text" placeholder="Username" id="sign_in_username" required>
+													<input type="password" placeholder="Password" id="sign_in_password" required>
 												</form>
 												<div class="ckeck-bg">
 													<div class="checkbox-form">
@@ -98,9 +100,9 @@
 															</div>
 														</div>
 														<div class="check-right">
-															<form>
-																<input type="submit" value="Login">
-															</form>
+													
+																<input type="submit" id="sign_in_submit"  onclick=Login() value="Login">
+															
 														</div>
 														<div class="clearfix"> </div>
 													</div>
@@ -115,14 +117,14 @@
 											<div class="in-form Personal">
 												<h4>User Information</h4>
 												<form>
-													<input type="text" class="textbox" value="Enter your name here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name here...';}">
-													<input type="text" class="textbox" value="Enter your email here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
+													<input type="text" class="textbox" id="sign_up_username" placeholder="Enter your name here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name here...';}">
+													<input type="text" class="textbox" id="sign_up_email" placeholder="Enter your email here..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}">
 												</form>
 												<h5>Password</h5>
-												<form>
-												    <input type="password" class="password" value="Enter your password..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
-													<input type="submit" value="submit">
-												</form>
+												
+												    <input type="password" class="password" id="sign_up_password"  placeholder="Enter your password..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}">
+													<input type="submit" id="sign_up_submit" onclick=Sign_up() value="submit">
+												
 											</div>
 										</div>
 									</div>
