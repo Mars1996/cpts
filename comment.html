@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Services</title>
+<title>Menu</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,28 +14,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/window.js"></script>
+<script src="js/comment.js"></script>
 <!-- //js -->
 <!-- FlexSlider -->
 <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 <script defer src="js/jquery.flexslider.js"></script>
 <script type="text/javascript">
 						$(window).load(function(){
-							
 						  $('.flexslider').flexslider({
 							animation: "slide",
 							start: function(slider){
 							  $('body').removeClass('loading');
 							}
 						  });
-						  
 						});
+						
+
 					  </script>
 <!-- //FlexSlider -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 	
-<body onLoad="receive()">
+<body onLoad="receive_comments()">
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
@@ -43,7 +43,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<nav class="navbar navbar-default">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<div class="navbar-header">
-             			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -54,14 +54,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<a class="navbar-brand" href="index.html">Food in BeiHang<span>A guide for all people who want to enjoy food</span></a>
 						</div>
 					</div>
-					
+
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					 <ul class="nav navbar-nav">
 						<li><a href="index.html">Home</a></li>
-						<li class="active"><a href="dinninghouse.html">Dinning house</a></li>
-						<li><a href="recommend.html">daily recommend</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
+						<li ><a href="dinninghouse.html">Dinning house</a></li>
+						<li ><a href="recommend.html">daily recommend</a></li>
+						<li ><a href="contact.html">Contact Us</a></li>
 					  </ul>
 					</div><!-- /.navbar-collapse -->
 				</nav>
@@ -69,78 +69,53 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 	</div>
 <!-- //banner -->
-<!-- services -->
-	<div class="services">
+<!-- menu -->
+	<div class="menu-page">
 		<div class="container">
-			<div class="services-grid">
-				<h3>Windows in the Dinning Hall</h3>
-				
-				<div  id="window_outern_div" class="services-overview-grids">
-					<!--
-                    <div id="window_1" class="col-md-12 services-overview-grid">
-						<div class="services-overview-grd">
-							<div class="col-md-6">
-                            <a href="images/7.jpg" class="b-link-stripe b-animate-go1   swipebox"  title="">
-								<img src="images/7.jpg" alt=" " class="img-responsive" />
-							</a>
-                            </div>
-							<div class=" col-md-6 services-overview-gd ">
-								<h4><a href="menu.html">window 1</a></h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor 
-									sit amet, consectetur, adipisci velit, sed quia non numquam 
-									eius modi tempora incidunt ut labore et dolore magnam aliquam 
-									quaerat voluptatem.</p>
-							</div>
-						</div>
-					</div>
-                    <div class="col-md-12 services-overview-grid">
-						<div class="services-overview-grd">
-							<div class="col-md-6">
-                            <a href="images/8.jpg" class="b-link-stripe b-animate-go1   swipebox"  title="">
-								<img src="images/8.jpg" alt=" " class="img-responsive" />
-							</a>
-                            </div>
-							<div class=" col-md-6 services-overview-gd ">
-								<h4><a href="menu.html">window 2</a></h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor 
-									sit amet, consectetur, adipisci velit, sed quia non numquam 
-									eius modi tempora incidunt ut labore et dolore magnam aliquam 
-									quaerat voluptatem.</p>
-							</div>
-						</div>
-					</div>
-                    <div class="col-md-12 services-overview-grid">
-						<div class="services-overview-grd">
-							<div class="col-md-6">
-                            <a href="images/9.jpg" class="b-link-stripe b-animate-go1   swipebox"  title="">
-								<img src="images/9.jpg" alt=" " class="img-responsive" />
-							</a>
-                            </div>
-							<div class=" col-md-6 services-overview-gd ">
-								<h4> <a href="menu.html">window 3</a></h4>
-								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor 
-									sit amet, consectetur, adipisci velit, sed quia non numquam 
-									eius modi tempora incidunt ut labore et dolore magnam aliquam 
-									quaerat voluptatem.</p>
-							</div>
-						</div>
-					</div>
-					
-					
-					<div class="clearfix"> </div>
-                    -->
+			<div class="menu-title">
+				<h3>Guests' Comments</h3>
+				<div class="line">
 				</div>
+				 
 			</div>
-			<link rel="stylesheet" href="css/swipebox.css" />
+            
+            	
+                
+                <div  id="comment_outern_div" class="services-overview-grids">
+                <!--
+					<div class="col-md-12 services-overview-grid">
+						<div class="services-overview-grd">
+							<div class=" col-md-12 services-overview-gd ">
+								<h4>User 1:</h4>
+								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor 
+									sit amet, consectetur, adipisci velit, sed quia non numquam 
+									eius modi tempora incidunt ut labore et dolore magnam aliquam 
+									quaerat voluptatem.</p>
+							</div>
+                            <div class="col-md-12 services-overview-gd">
+                            <a href="images/7.jpg" class="b-link-stripe b-animate-go1   swipebox"  title="">
+								<img src="images/7.jpg" alt=" " class="img-responsive " style="width:200px; height:165px" />
+							</a>
+                            </div>
+						</div>
+					</div>
+                 -->
+				</div>
+                
+                <link rel="stylesheet" href="css/swipebox.css" />
 						<script src="js/jquery.swipebox.min.js"></script> 
 							<script type="text/javascript">
 								jQuery(function($) {
 									$(".swipebox").swipebox();
 								});
 							</script>
+                
+				
+			
+			
 		</div>
 	</div>
-<!-- //services -->
+<!-- //comment -->
 <!--footer-->
 	<div class="footer">
 		<div class="container">

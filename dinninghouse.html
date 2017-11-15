@@ -34,7 +34,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 	
-<body>
+<body onLoad="receive_dinninghall()">
 <!-- banner -->
 	<div class="banner1">
 		<div class="container">
@@ -78,8 +78,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="services-grid">
 				<h3>All Dinning Houses</h3>
 				
-				<div class="services-overview-grids">
-					<div class="col-md-12 services-overview-grid">
+				<div id="canteen_outern_div" class="services-overview-grids">
+					
+                    <!--
+                    <div class="col-md-12 services-overview-grid">
 						<div class="services-overview-grd">
 							<div class="col-md-6">
                             <a href="images/7.jpg" class="b-link-stripe b-animate-go1   swipebox"  title="">
@@ -87,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							</a>
                             </div>
 							<div class=" col-md-6 services-overview-gd ">
-								<h4><a  name="DH1" onClick="send_DH_id(this.name)" href="window.html">Underground Dinning Hall</a></h4>
+								<h4><a  name="DH1" onClick="send_DH_id(this.name)" href="window.html?DHID=123">Underground Dinning Hall</a></h4>
 								<p>Neque porro quisquam est, qui dolorem ipsum quia dolor 
 									sit amet, consectetur, adipisci velit, sed quia non numquam 
 									eius modi tempora incidunt ut labore et dolore magnam aliquam 
@@ -164,6 +166,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 					
 					<div class="clearfix"> </div>
+                    -->
 				</div>
 			</div>
 			<link rel="stylesheet" href="css/swipebox.css">

@@ -2,87 +2,102 @@ var dataset={
 	//load 12 dishes once a time
 	"dishes":[
 	{
-		"dishId":1,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },
 	{
-		"dishId":2,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },
 	{
-		"dishId":3,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },
 	{
-		"dishId":4,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },
 	{
-		"dishId":5,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":6,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":1,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":2,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":3,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":4,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":5,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"imageUrl":"images/img12.jpg"
-	},
-	{
-		"dishId":6,
-		"name":"Voluptate cillum fugiat.",
-		"describe":"Lorem Ipsum passages, and more recently with desktop publishing software like Aldus including versions of Lorem Ipsum.",
-		"average":4.5,
-		"imageUrl":"images/img12.jpg"
-	},
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },{
+        "name":"北京烤鸭",
+        "did":1,
+        "price":12.00,
+        "score":6.66,
+        "label":"北京菜;",
+		"imgurl":"images/7.jpg"
+    },
+    {
+        "name":"意式水果披萨",
+        "did":2,
+        "price":27.00,
+        "score":6.66,
+        "label":"意式;水果;披萨",
+		"imgurl":"images/7.jpg"
+    },
+	
+	
 	
 ],
 	"dishesNum":12,
@@ -92,42 +107,48 @@ var dataset={
 var ifEmpty=0;
 function addNewFood()
 {
-var div=document.getElementById("mainDish");
-for(var i=0;i<dataset.dishesNum;i++)
-{
-	var newDiv=document.createElement('div');
-	newDiv.setAttribute("class","col-md-4 menu-grids-info");
-	var img=document.createElement('img');
-	img.setAttribute("src",dataset.dishes[i].imageUrl);
-	img.setAttribute("id",dataset.dishes[i].dishId);
-	newDiv.innerHTML+="<a href='dishes.html'>";
-	newDiv.appendChild(img);
-	newDiv.innerHTML+="</a>";
-	newDiv.innerHTML+="<h4><a href='dishes.html' onclick='herfclick("+dataset.dishes[i].dishId+")'>"+dataset.dishes[i].name+"</a></h4>";
-	newDiv.innerHTML+="<p><a href='dishes.html' onclick='herfclick("+dataset.dishes[i].dishId+")'>"+dataset.dishes[i].describe+"</a></p>";
-	newDiv.innerHTML+="<div class='menu-rate'><h5>average score "+dataset.dishes[i].average+"</h5></div>"
-	div.appendChild(newDiv);
-	
-}
-
-	
+	var div=document.getElementById("mainDish");
+	for(var i=0;i<dataset.dishesNum;i++)
+	{
+		var newDiv=document.createElement('div');
+		newDiv.setAttribute("class","col-md-4 menu-grids-info");
+		var img=document.createElement('img');
+		img.setAttribute("src",dataset.dishes[i].imgurl);
+		img.setAttribute("id",dataset.dishes[i].did);
+		newDiv.appendChild(img);
+		newDiv.innerHTML+="<h4><a href='comment.html?DID="+dataset.dishes[i].did+"' onclick='herfclick("+dataset.dishes[i].did+")'>"+dataset.dishes[i].name+"</a></h4>";
+		newDiv.innerHTML+="<p><a href='comment.html?DID="+dataset.dishes[i].did+"' onclick='herfclick("+dataset.dishes[i].did+")'>"+dataset.dishes[i].label+"</a></p>";
+		newDiv.innerHTML+="<div class='menu-rate'><h5>average score "+dataset.dishes[i].score+"</h5></div>"
+		div.appendChild(newDiv);	
+	}
 }
 	
 function herfclick(id)
 {
-	alert(id);
-	clickId=id;
+	//alert(id);
+	//clickId=getParams(WID);
+	//alert(clickId);
 	//console.log(clickId);
 }
 
 function pages()
 {
-	
+	var window_id = getParams("WID");
+	//alert(window_id);
+	//get dishes from window No.window_id
 	addNewFood();
 	
 	
 }
-
+function getParams(key) 
+{
+	var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null) {
+		return unescape(r[2]);
+	}
+	return null;
+};
 //文档高度
 function getDocumentTop() {
     var scrollTop = 0, bodyScrollTop = 0, documentScrollTop = 0;
@@ -178,8 +199,9 @@ window.onscroll = function () {
 		if(a>2)
 		a-=2;
 		if(ifEmpty==0)
-		{reLoadData();
-    	addNewFood();
+		{
+			reLoadData();
+    		addNewFood();
 		}
 		
         //ajax_function()
